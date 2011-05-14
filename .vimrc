@@ -1,0 +1,94 @@
+colorscheme idleFingers
+syntax on
+"set gfn=Profont\ 9
+set gfn=Monospace\ 9
+set shell=/bin/bash
+
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+filetype plugin indent on
+set nocompatible
+set modelines=0
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set number
+set encoding=utf-8
+set scrolloff=3
+set autoindent
+set showmode
+set showcmd
+set hidden
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set cursorline
+set ttyfast
+set ruler
+set backspace=indent,eol,start
+set laststatus=2
+set relativenumber
+
+let mapleader = ","
+
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+"set showmatch
+set hlsearch
+nnoremap <leader><space> :let @/=''<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+"set colorcolumn=85
+
+set list
+set listchars=tab:▸\ ,eol:¬
+
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
+inoremap jj <ESC>
+nnoremap j gj
+nnoremap k gk
+nnoremap <leader>w <C-w>v<C-w>l
+inoremap <S-tab> <Backspace>
+
+"change between absolute and relative linenumbers
+nnoremap <leader>l :set relativenumber<CR>
+nnoremap <leader>L :set nu<CR>
+
+"turn on nerdtree
+nnoremap <leader>n :NERDTree<CR>
+
+" comment and uncomment lines (viual mode)
+vnoremap <leader>m :s/^/#/<CR>
+vnoremap <leader>M :s/#/<CR>
+
+" split navigation
+nnoremap <leader>w <C-w><C-w>
+nnoremap <leader>q <C-w><C-q>
+
+" CommandT mappings
+nnoremap <leader>t :CommandT<CR>
+nnoremap <leader>cf :CommandTFlush<CR>
+
+" tabs
+nnoremap <leader>fn :tabnew<CR>
+nnoremap <leader>fc :tabclose<CR>
+
+" switch files
+nnoremap <leader>s :e #<CR>
