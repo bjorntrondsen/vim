@@ -2,6 +2,5 @@ Setup on Arch Linux
 
 pacman -S gvim
 
-clone repo to .vim
-symlink .vimrc:
-ln -s ~/.vim/.vimrc .vimrc
+clone repo to $HOME/.vim
+symlink $home/.vimrc to .vim/.vimrc
