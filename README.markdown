@@ -33,5 +33,5 @@ rake make
 
 ### TODO
 
-Remove unused plugins
-Convert all plugins to git submodules for easier updating
+Remove unused plugins.
+Convert all plugins to git submodules for easier updating.
