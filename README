@@ -1,0 +1,7 @@
+Setup on Arch Linux
+
+pacman -S gvim
+
+clone repo to .vim
+symlink .vimrc:
+ln -s ~/.vim/.vimrc .vimrc
