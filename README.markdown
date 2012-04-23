@@ -5,6 +5,7 @@ pacman -S gvim
 ```
 
 clone repo to $HOME/.vim
+
 symlink $home/.vimrc to .vim/.vimrc
 
 ### Ack searching
