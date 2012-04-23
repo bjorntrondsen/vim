@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/bjorn/rails/streamliner'
 let g:netrw_dirhist_2='/home/bjorn/rails/streamliner/spec/support'
 let g:netrw_dirhist_3='/home/bjorn/rails/streamliner/app/helpers'
 let g:netrw_dirhist_4='/home/bjorn/rails/streamliner/.git'
 let g:netrw_dirhist_5='/home/bjorn/.rvm/gems/ruby-1.9.2-p136/gems/pickle-0.4.4/lib/pickle'
 let g:netrw_dirhist_6='/home/bjorn/rails/testapp'
+let g:netrw_dirhist_7='/code/gems/rails_exception_handler'
+let g:netrw_dirhist_8='/code/arctodus/hordabuss_hjemmeside'
