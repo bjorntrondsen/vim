@@ -92,6 +92,9 @@ inoremap <S-tab> <Backspace>
 " paste from system clipboard
 map <C-V> :put +<CR>
 
+" remove highlighting
+nnoremap <silent><Backspace> :nohls<CR>
+
 "toggle between absolute and relative linenumbers
 nnoremap <leader>l :exec &nu==1? "set relativenumber" : "set nu"<CR>
 
