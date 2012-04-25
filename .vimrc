@@ -76,11 +76,15 @@ inoremap <right> <nop>
 :noremap K <nop>
 :noremap J <S-left>
 
+" exist insert mode
 inoremap jj <ESC>
-nnoremap aa $
-nnoremap ii ^
-
+" move to end of current line
+nnoremap ga $
+" move to first character on current line
+nnoremap gi ^
+" cycle between splits
 nnoremap <leader>w <C-w>v<C-w>l
+" shift-tab = backspace
 inoremap <S-tab> <Backspace>
 
 " paste from system clipboard
