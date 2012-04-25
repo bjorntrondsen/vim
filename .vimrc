@@ -53,23 +53,33 @@ set formatoptions=qrn1
 set list
 set listchars=tab:▸\ ,eol:¬
 
-"nnoremap <up> <nop>
-"nnoremap <down> <nop>
-"nnoremap <left> <nop>
-"nnoremap <right> <nop>
-"inoremap <up> <nop>
-"inoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
+" Disable arrow keys
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+" Shift movement keys one key to the right to fit with norweigan keyboard
+:noremap ø <right>
+:noremap l <up>
+:noremap k <down>
+:noremap j <left>
+:noremap Ø <S-right>
+:noremap L <nop>
+:noremap K <nop>
+:noremap J <S-left>
+
 inoremap jj <ESC>
-nnoremap j gj
-nnoremap k gk
 nnoremap <leader>w <C-w>v<C-w>l
 inoremap <S-tab> <Backspace>
 
-"change between absolute and relative linenumbers
-nnoremap <leader>l :set relativenumber<CR>
-nnoremap <leader>L :set nu<CR>
+"toggle between absolute and relative linenumbers
+"nnoremap <leader>l :set relativenumber<CR>
+"nnoremap <leader>L :set nu<CR>
+nnoremap <leader>l :exec &nu==1? "set relativenumber" : "set nu"<CR>
 
 "turn on nerdtree
 nnoremap <leader>n :NERDTree<CR>
