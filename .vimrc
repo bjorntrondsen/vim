@@ -76,9 +76,10 @@ inoremap jj <ESC>
 nnoremap <leader>w <C-w>v<C-w>l
 inoremap <S-tab> <Backspace>
 
+" paste from system clipboard
+map <C-V> :put +<CR>
+
 "toggle between absolute and relative linenumbers
-"nnoremap <leader>l :set relativenumber<CR>
-"nnoremap <leader>L :set nu<CR>
 nnoremap <leader>l :exec &nu==1? "set relativenumber" : "set nu"<CR>
 
 "turn on nerdtree
