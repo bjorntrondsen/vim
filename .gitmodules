@@ -4,3 +4,6 @@
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/AutoClose"]
+	path = bundle/AutoClose
+	url = git://github.com/vim-scripts/AutoClose.git
