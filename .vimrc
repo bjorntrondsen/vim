@@ -73,6 +73,7 @@ noremap ø <right>
 noremap l <up>
 noremap k <down>
 noremap j <left>
+noremap h <nop>
 noremap Ø <S-right>
 noremap L <nop>
 noremap K <nop>
