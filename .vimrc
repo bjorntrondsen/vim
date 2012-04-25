@@ -77,6 +77,9 @@ inoremap <right> <nop>
 :noremap J <S-left>
 
 inoremap jj <ESC>
+nnoremap aa $
+nnoremap ii ^
+
 nnoremap <leader>w <C-w>v<C-w>l
 inoremap <S-tab> <Backspace>
 
