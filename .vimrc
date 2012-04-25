@@ -62,6 +62,10 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+:noremap <S-right> <nop>
+:noremap <S-up> <nop>
+:noremap <S-down> <nop>
+:noremap <S-left> <nop>
 " Shift movement keys one key to the right to fit with norweigan keyboard
 :noremap ø <right>
 :noremap l <up>
