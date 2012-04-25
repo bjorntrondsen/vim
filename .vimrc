@@ -62,19 +62,21 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-:noremap <S-right> <nop>
-:noremap <S-up> <nop>
-:noremap <S-down> <nop>
-:noremap <S-left> <nop>
+noremap <S-right> <nop>
+noremap <S-up> <nop>
+noremap <S-down> <nop>
+noremap <S-left> <nop>
+" Disable backspace
+inoremap <Backspace> <nop>
 " Shift movement keys one key to the right to fit with norweigan keyboard
-:noremap ø <right>
-:noremap l <up>
-:noremap k <down>
-:noremap j <left>
-:noremap Ø <S-right>
-:noremap L <nop>
-:noremap K <nop>
-:noremap J <S-left>
+noremap ø <right>
+noremap l <up>
+noremap k <down>
+noremap j <left>
+noremap Ø <S-right>
+noremap L <nop>
+noremap K <nop>
+noremap J <S-left>
 
 " exist insert mode
 inoremap jj <ESC>
