@@ -32,8 +32,14 @@ bundle install
 rake make
 ```
 
-### TODO
+### YouCompleteMe
+YCM must be build after install
 
-Remove unused plugins
-
-Convert all plugins to git submodules for easier updating
+```
+$ pacman -S cmake
+$ cd /tmp
+$ mkdir ycm_build
+$ cd ycm_build
+$ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/cpp
+$ make ycm_core
+```

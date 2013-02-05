@@ -120,3 +120,6 @@ nnoremap <leader>fc :tabclose<CR>
 
 " switch files
 nnoremap <leader>s :e #<CR>
+
+" YouCompleteMe
+let g:ycm_key_previous_completion = '<C-TAB>'
