@@ -113,9 +113,8 @@ vnoremap <leader>M :s/#/<CR>
 nnoremap <leader>w <C-w><C-w>
 nnoremap <leader>q <C-w><C-q>
 
-" CommandT mappings
-nnoremap <leader>t :CommandT<CR>
-nnoremap <leader>cf :CommandTFlush<CR>
+" CtrlP mappings
+nnoremap <leader>t :CtrlP<CR>
 
 " tabs
 nnoremap <leader>fn :tabnew<CR>
