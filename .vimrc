@@ -116,6 +116,10 @@ nnoremap <leader>q <C-w><C-q>
 " CtrlP mappings
 nnoremap <leader>t :CtrlP<CR>
 
+" vim-seek mappings
+let g:SeekKey = 'h'
+let g:SeekBackKey = 'H'
+
 " tabs
 nnoremap <leader>fn :tabnew<CR>
 nnoremap <leader>fc :tabclose<CR>
