@@ -78,6 +78,9 @@ noremap Ø <S-right>
 noremap L <nop>
 noremap K <nop>
 noremap J <S-left>
+" Make up/down move by wrapped lines
+noremap k gj
+noremap l gk
 
 " exist insert mode
 inoremap jj <ESC>
