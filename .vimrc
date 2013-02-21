@@ -127,9 +127,6 @@ nnoremap <leader>fc :tabclose<CR>
 " switch files
 nnoremap <leader>s :e #<CR>
 
-" YouCompleteMe
-let g:ycm_key_previous_completion = '<C-TAB>'
-
 " Maximize window on start in GUI mode
 if has("gui_running")
   set lines=999 columns=999
