@@ -14,7 +14,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set number
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -29,6 +28,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set nonumber
 set relativenumber
 
 let mapleader = ","
@@ -115,6 +115,8 @@ nnoremap <leader>q <C-w><C-q>
 
 " CtrlP mappings
 nnoremap <leader>t :CtrlP<CR>
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_show_hidden = 1
 
 " vim-seek mappings
 let g:SeekKey = 'h'
