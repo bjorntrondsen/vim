@@ -133,3 +133,8 @@ nnoremap <leader>s :e #<CR>
 if has("gui_running")
   set lines=999 columns=999
 endif
+
+" Treat .rabl as ruby files and add syntax highlighting
+au BufRead,BufNewFile *.rabl setf ruby
+au BufRead,BufNewFile *.rabl syn keyword rubyRabl node attribute object child collection attributes glue extends
+au BufRead,BufNewFile *.rabl hi def link rubyRabl Function
