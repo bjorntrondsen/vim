@@ -115,7 +115,7 @@ nnoremap <leader>q <C-w><C-q>
 
 " CtrlP mappings
 nnoremap <leader>t :CtrlP<CR>
-let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend|log)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
 let g:ctrlp_show_hidden = 1
 
 " vim-seek mappings
