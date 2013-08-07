@@ -138,3 +138,6 @@ endif
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.rabl syn keyword rubyRabl node attribute object child collection attributes glue extends
 au BufRead,BufNewFile *.rabl hi def link rubyRabl Function
+
+" Add syntax highlighting to .hbs files
+au BufReadPost *.hbs set syntax=html
