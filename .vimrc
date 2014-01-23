@@ -93,7 +93,9 @@ nnoremap <leader>w <C-w>v<C-w>l
 " shift-tab = backspace
 inoremap <S-tab> <Backspace>
 
-" paste from system clipboard
+"Use ctrl+c to copy to system clipboard in visual mode
+vnoremap <C-c> "+y
+" Use ctrl+v to paste from system clipboard
 map <C-V> :put +<CR>
 
 " remove highlighting
