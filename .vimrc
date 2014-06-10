@@ -30,6 +30,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set nonumber
 set relativenumber
+set wildignore+=*/tmp/*
 
 let mapleader = ","
 
@@ -140,6 +141,9 @@ endif
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.rabl syn keyword rubyRabl node attribute object child collection attributes glue extends
 au BufRead,BufNewFile *.rabl hi def link rubyRabl Function
+"
+" Treat .axlsx as ruby files
+au BufRead,BufNewFile *.axlsx setf ruby
 
 " Handlebars/mustache autocomplete
 let g:mustache_abbreviations = 1
