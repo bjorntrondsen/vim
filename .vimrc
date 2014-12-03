@@ -147,3 +147,11 @@ au BufRead,BufNewFile *.axlsx setf ruby
 
 " Handlebars/mustache autocomplete
 let g:mustache_abbreviations = 1
+
+" Fix syntax highlighting performance
+"set nocursorcolumn
+"set nocursorline
+"set norelativenumber
+"syntax sync maxlines=256
+"set lazyredraw
+set re=1
