@@ -152,6 +152,6 @@ let g:mustache_abbreviations = 1
 "set nocursorcolumn
 "set nocursorline
 "set norelativenumber
-"syntax sync maxlines=256
 "set lazyredraw
 set re=1
+syntax sync maxlines=256
