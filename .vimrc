@@ -156,3 +156,7 @@ let g:mustache_abbreviations = 1
 "set lazyredraw
 set re=1
 syntax sync maxlines=256
+
+" Highlight the altgr-space character. It is invisible and errors that are hard to understand.
+highlight AltGrSpace ctermbg=red guibg=red
+match AltGrSpace / /
