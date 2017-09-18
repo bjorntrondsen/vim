@@ -157,6 +157,10 @@ let g:mustache_abbreviations = 1
 set re=1
 syntax sync maxlines=256
 
-" Highlight the altgr-space character. It is invisible and errors that are hard to understand.
+" Highlight the altgr-space character. It is invisible and results in errors that are hard to figure out.
 highlight AltGrSpace ctermbg=red guibg=red
 match AltGrSpace / /
+
+" Allow project spesific (local) configuration files
+set exrc
+set secure
