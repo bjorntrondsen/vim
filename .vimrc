@@ -110,9 +110,10 @@ nnoremap <leader>l :exec &nu==1? "set relativenumber" : "set nu"<CR>
 
 "turn on nerdtree
 nnoremap <leader>n :NERDTree<CR>
-
 " enable nerdtree line numbers
 let NERDTreeShowLineNumbers=1
+" automatically accept buffer deletion when moving/deleting file
+let NERDTreeAutoDeleteBuffer=1
 
 " comment and uncomment lines (viual mode)
 vnoremap <leader>m :s/^/#/<CR>
