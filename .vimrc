@@ -139,6 +139,8 @@ nnoremap <leader>s :e #<CR>
 cnoreabbrev Ack Ack!
 " Ack shortcut
 nnoremap <Leader>a :Ack!<Space>
+" auto highlight the search
+let g:ackhighlight=1
 
 " Find and replace all in current file
 nnoremap <leader>r yiw:%s/\<<C-r><C-w>\>//g<left><left>
