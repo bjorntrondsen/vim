@@ -99,6 +99,8 @@ inoremap <S-tab> <Backspace>
 vnoremap <C-c> "+y
 " Use ctrl+v to paste from system clipboard
 map <C-V> :put +<CR>
+" ctrl-v inline in insert mode
+inoremap <C-V> <C-R>*
 
 " remove highlighting
 nnoremap <silent><Backspace> :nohls<CR>
