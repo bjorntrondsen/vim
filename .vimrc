@@ -134,9 +134,11 @@ nnoremap <leader>s :e #<CR>
 
 " Dont auto jump to first ack restult
 cnoreabbrev Ack Ack!
-
 " Ack shortcut
 nnoremap <Leader>a :Ack!<Space>
+
+" Find and replace all in current file
+nnoremap <leader>r yiw:%s/\<<C-r><C-w>\>//g<left><left>
 
 " Maximize window on start in GUI mode
 if has("gui_running")
