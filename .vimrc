@@ -143,6 +143,12 @@ nnoremap <Leader>a :Ack!<Space>
 " Find and replace all in current file
 nnoremap <leader>r yiw:%s/\<<C-r><C-w>\>//g<left><left>
 
+" vim-rspec
+map <Leader>1 :call RunNearestSpec()<CR>
+map <Leader>2 :call RunCurrentSpecFile()<CR>
+map <Leader>3 :vert term bundle exec rake parallel:spec<CR>
+let g:rspec_command = "vert term rspec {spec}"
+
 " Maximize window on start in GUI mode
 if has("gui_running")
   set lines=999 columns=999
