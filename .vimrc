@@ -116,11 +116,7 @@ let NERDTreeShowLineNumbers=1
 " automatically accept buffer deletion when moving/deleting file
 let NERDTreeAutoDeleteBuffer=1
 
-" comment and uncomment lines (viual mode)
-vnoremap <leader>m :s/^/#/<CR>
-vnoremap <leader>M :s/#/<CR>
-
-" split navigation
+" open veritcal split, close vertical split
 nnoremap <leader>w <C-w><C-w>
 nnoremap <leader>q <C-w><C-q>
 
@@ -128,10 +124,6 @@ nnoremap <leader>q <C-w><C-q>
 nnoremap <leader>t :CtrlP<CR>
 let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend|log)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py|public\/uploads'
 let g:ctrlp_show_hidden = 1
-
-" vim-seek mappings
-let g:SeekKey = 'h'
-let g:SeekBackKey = 'H'
 
 " tabs
 nnoremap <leader>fn :tabnew<CR>
