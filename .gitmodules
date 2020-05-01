@@ -40,3 +40,6 @@
 [submodule "bundle/vim-vue"]
 	path = bundle/vim-vue
 	url = git@github.com:posva/vim-vue.git
+[submodule "bundle/vim-rspec"]
+	path = bundle/vim-rspec
+	url = git@github.com:thoughtbot/vim-rspec.git
