@@ -109,6 +109,9 @@ nnoremap <silent><Backspace> :nohls<CR>
 "toggle between absolute and relative linenumbers
 nnoremap <leader>l :exec &nu==1? "set relativenumber" : "set nu"<CR>
 
+" use :q to exit everything
+cnoreabbrev q qa
+
 "turn on nerdtree
 nnoremap <leader>n :NERDTree<CR>
 " enable nerdtree line numbers
