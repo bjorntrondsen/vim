@@ -42,7 +42,8 @@ set gdefault
 set incsearch
 "set showmatch
 set hlsearch
-nnoremap <leader><space> :let @/=''<cr>
+" Prevent highligting with # to jump to the next occurence
+nnoremap # :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 nnoremap <tab> %
 vnoremap <tab> %
 
