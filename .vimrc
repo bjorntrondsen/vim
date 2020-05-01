@@ -109,6 +109,9 @@ nnoremap <leader>l :exec &nu==1? "set relativenumber" : "set nu"<CR>
 "turn on nerdtree
 nnoremap <leader>n :NERDTree<CR>
 
+" enable nerdtree line numbers
+let NERDTreeShowLineNumbers=1
+
 " comment and uncomment lines (viual mode)
 vnoremap <leader>m :s/^/#/<CR>
 vnoremap <leader>M :s/#/<CR>
@@ -132,6 +135,12 @@ nnoremap <leader>fc :tabclose<CR>
 
 " switch files
 nnoremap <leader>s :e #<CR>
+
+" Dont auto jump to first ack restult
+cnoreabbrev Ack Ack!
+
+" Ack shortcut
+nnoremap <Leader>a :Ack!<Space>
 
 " Maximize window on start in GUI mode
 if has("gui_running")
