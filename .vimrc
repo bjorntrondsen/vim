@@ -129,8 +129,8 @@ let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend|log)$|(^|[/\\]
 let g:ctrlp_show_hidden = 1
 
 " tabs
-nnoremap <leader>fn :tabnew<CR>
-nnoremap <leader>fc :tabclose<CR>
+"nnoremap <leader>fn :tabnew<CR>
+"nnoremap <leader>fc :tabclose<CR>
 
 " switch files
 nnoremap <leader>s :e #<CR>
@@ -207,3 +207,6 @@ function! NERDCommenter_after()
     let g:ft = ''
   endif
 endfunction
+
+" coc.nvim jump to definition
+map <C-d> :call CocActionAsync('jumpDefinition')<CR>
