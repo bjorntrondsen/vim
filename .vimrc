@@ -149,7 +149,7 @@ nnoremap <leader>r yiw:%s/\<<C-r><C-w>\>//g<left><left>
 map <Leader>1 :call RunNearestSpec()<CR>
 map <Leader>2 :call RunCurrentSpecFile()<CR>
 map <Leader>3 :vert term bundle exec rake parallel:spec<CR>
-let g:rspec_command = "vert term rspec {spec}"
+let g:rspec_command = "vert term bundle exec rspec {spec}"
 
 " Maximize window on start in GUI mode
 if has("gui_running")
