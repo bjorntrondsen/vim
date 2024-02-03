@@ -125,7 +125,7 @@ nnoremap <leader>q <C-w><C-q>
 
 " CtrlP mappings
 nnoremap <leader>t :CtrlP<CR>
-let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend|log)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py|public\/uploads'
+let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend|log)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py|public\/uploads|node_modules'
 let g:ctrlp_show_hidden = 1
 
 " tabs
@@ -210,3 +210,7 @@ endfunction
 
 " coc.nvim jump to definition
 map <C-d> :call CocActionAsync('jumpDefinition')<CR>
+
+
+set guioptions-=m  "hide menu bar
+set guioptions-=T "hide toolbar
